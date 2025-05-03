@@ -4,19 +4,30 @@
             "runtime": "vercel-php@0.6.0"
         }
     },
-    "routes": [{ "src": "/(.*)", "dest": "/api/index.php" }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        }
+    ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
         "APP_URL": "https://yourproductionurl.com",
-
+        "APP_KEY": "base64:iDWRhDmP6GS7voufFmhKam+SIVr6UEsf2zjVTV4fNXA=",
+        "DB_CONNECTION": "mysql",
+        "DB_HOST": "127.0.0.1",
+        "DB_PORT": "3306",
+        "DB_DATABASE": "DB_MYPATH",
+        "DB_USERNAME": "arisandi",
+        "DB_PASSWORD": "Arisandi29@",
+        "FILESYSTEM_DISK": "local",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
         "APP_ROUTES_CACHE": "/tmp/routes.php",
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
-
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
